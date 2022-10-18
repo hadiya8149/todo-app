@@ -1,7 +1,7 @@
 import Header from "./components/Header.js";
 import React, {useState} from 'react';
-import {Form, Button, Card} from 'react-bootstrap'
-// import ToDo from "./components/todo.js";
+import {Form, Button, Card} from 'react-bootstrap';
+import './App.css';
 import ToDoList from './components/list.js';
 
 
@@ -30,9 +30,9 @@ function FormTodo({addTodo}){
     <Form onSubmit = {handleSubmit}>
       <Form.Group>
         <Form.Control type="text" className = "input" value={value} onChange = {e => setValue(e.target.value)} placeholder="Add new todo"/>
-
+        <Button variant = "primary mb-3" type="submit">Submit</Button>
       </Form.Group>
-      <Button variant = "primary mb-3" type="submit">Submit</Button>
+      
     </Form>
   )
 }
