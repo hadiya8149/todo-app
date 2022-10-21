@@ -2,13 +2,18 @@
     padding: 60px;
     text-align: center;
 }
-.todolist{
+.add-bar{
     position:absolute;
     top:50%;
     left:50%;
     margin: 0 auto;
     transform: translate(-50%, -50%);
+    display:flex;
+
 }
 header{
     text-align:center;
+}
+.todolist{
+
 }

@@ -1,12 +1,6 @@
-import Header from "./components/Header.js";
 import React, {useState} from 'react';
 import {Form, Button, Card} from 'react-bootstrap';
 import './App.css';
-import {Route, Routes,BrowserRouter as  Router} from "react-router-dom";
-import PomodoroClock from "./components/pomodoro";
-import NavBar from "./components/Navbar.js";
-// import ToDoList from './components/list.js';
-import './components/pomodoro-1.jpg';
 
 function Todo({todo, index, markTodo, removeTodo}){
       if(todo.length!==0){
@@ -39,7 +33,7 @@ function FormTodo({addTodo}){
     </Form>
   )
 }
-function App() {
+function TodoPage() {
   const [toDoList, setToDoList]= useState([]);
   const addTodo = task => {
     const newTodos = [...toDoList, {task}];
@@ -57,17 +51,8 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Router>
-      <NavBar />
-        <Routes>
-          <Route path='/pomodoro' element={<PomodoroClock />} />
-        
-        </Routes>
-
-      </Router>
-      
-      <Header />
+    <div className="Todo-container">
+     
       
       
       {/* <ToDoList toDoList={toDoList} /> */}
@@ -92,4 +77,4 @@ function App() {
   );
 }
 
-export default App;
+export default TodoPage;
