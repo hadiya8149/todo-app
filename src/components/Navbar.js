@@ -8,9 +8,9 @@ export default function NavBar(){
     return(
 <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">Todo App</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">HOme</Nav.Link>
+          <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="/pomodoro">Pomodoro clock</Nav.Link>
           <Nav.Link href="#">Contact</Nav.Link>
         </Nav>

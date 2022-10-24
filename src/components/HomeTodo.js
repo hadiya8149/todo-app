@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
 import {Form, Button, Card} from 'react-bootstrap';
-import './App.css';
+import '../App.css';
+import Header from "./Header.js";
 
 function Todo({todo, index, markTodo, removeTodo}){
       if(todo.length!==0){
         return(
-          <div className="todo">
+          <>
           <span style = {{ textDecoration: todo.complete ?"Line-through": ""}}>{todo.task}</span>
           <Button variant = "outline-success" onClick = {() => markTodo(index)}>✓</Button>{' '}
           <Button variant = "outline-danger" onClick ={() => removeTodo(index)}>x</Button>
-          </div>
+          </>
         )
       }
      
@@ -51,16 +52,21 @@ function TodoPage() {
   }
 
   return (
+      <>
+    <Header />
     <div className="Todo-container">
      
       
       
       {/* <ToDoList toDoList={toDoList} /> */}
       <FormTodo addTodo = {addTodo} />
-    <div  className="todolist"> 
+   
+      
+      </div>
+       <div  className="todolist"> 
       <ol>
       {toDoList.map((todo, index) => (
-      
+      <li>
             <Todo 
             key={index}
             index={index}
@@ -68,12 +74,11 @@ function TodoPage() {
             markTodo ={markTodo}
             removeTodo = {removeTodo} 
             />
-          
+          </li>
       ))}
       </ol>
     </div>
-      
-      </div>
+      </>
   );
 }
 
