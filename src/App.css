@@ -46,4 +46,20 @@ header{
 li{
     background-color:#e1ebf754;
     margin-bottom: 2px;
+    border-radius:13px;
+    border-style: solid;
+    border-color:gainsboro;
+    display:flex;
+    font-size:24px;
+    font-family :Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.modify-todo{
+    margin: 5px;
+
+}
+#btn-holder{
+    margin: 0 10px 0 auto;
+
 }

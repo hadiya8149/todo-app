@@ -8,8 +8,10 @@ function Todo({todo, index, markTodo, removeTodo}){
         return(
           <>
           <span style = {{ textDecoration: todo.complete ?"Line-through": ""}}>{todo.task}</span>
-          <Button variant = "outline-success" onClick = {() => markTodo(index)}>✓</Button>{' '}
-          <Button variant = "outline-danger" onClick ={() => removeTodo(index)}>x</Button>
+          <div id="btn-holder">
+          <Button className='modify-todo' variant = "outline-success" onClick = {() => markTodo(index)}>✓</Button>{' '}
+          <Button className='modify-todo' variant = "outline-danger" onClick ={() => removeTodo(index)}>x</Button>
+          </div>
           </>
         )
       }
