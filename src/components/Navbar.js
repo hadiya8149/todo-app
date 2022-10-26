@@ -11,7 +11,6 @@ export default function NavBar(){
           <Navbar.Brand href="#home">Todo App</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="/pomodoro">Pomodoro clock</Nav.Link>
           <Nav.Link href="#">Contact</Nav.Link>
         </Nav>
         </Container>
