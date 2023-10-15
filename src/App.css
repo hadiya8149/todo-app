@@ -1,5 +1,5 @@
 body{
-    background-color:#878ec536;
+    background-color:white;
 }
 .header{
     padding: 60px;
@@ -16,14 +16,18 @@ body{
     transform: translate(-50%, -50%);
     top: 0;
     display:flex;
+    width:50%;
 
 }
 header{
     text-align:center;
 }
+.ol{
+    padding:0;
+}
 .todolist{
     margin: 50px auto;
-    width: 500px;
+    width: 50%;
     height: 300px;
     overflow: auto;
     bottom: 0;
@@ -44,11 +48,12 @@ header{
     outline: 1px solid slategrey;
   }
 li{
-    background-color:#e1ebf754;
+    background-color:#94b8e45d;
     margin-bottom: 2px;
+    padding-left:10px;
     border-radius:13px;
     border-style: solid;
-    border-color:gainsboro;
+    border-color:rgb(182, 197, 221);
     display:flex;
     font-size:24px;
     font-family :Georgia, 'Times New Roman', Times, serif;

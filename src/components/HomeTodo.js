@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {Form, Button} from 'react-bootstrap';
-import '../App.css';
 import Header from "./Header.js";
 
 function Todo({todo, index, markTodo, removeTodo}){
@@ -66,7 +65,7 @@ function TodoPage() {
       
       </div>
        <div  className="todolist"> 
-      <ol>
+      <ol className='ol'>
       {toDoList.map((todo, index) => (
       <li>
             <Todo 
